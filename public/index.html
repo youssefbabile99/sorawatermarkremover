@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sora Watermark Remover – Clean MP4 in 3s</title>
+  <meta name="description"
+    content="Paste your Sora share link and get a clean MP4 in 3 seconds. Built for creators who need a fast, reliable watermark removal flow.">
+  <meta name="keywords"
+    content="sora watermark remover, remove sora watermark, sora AI video watermark removal, free sora watermark tool, sora watermark remover no quality loss, how to remove sora 2 watermark, batch sora watermark removal, download sora video without watermark, sorawatermarkremover">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="SoraWatermarkRemover">
+  <link rel="canonical" href="https://sorawatermarkremover.live/">
+  <link rel="icon" href="logo.svg" type="image/svg+xml">
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Sora Watermark Remover – Clean MP4 in 3s">
+  <meta property="og:description"
+    content="Paste your Sora share link and get a clean MP4 in 3 seconds. Built for creators who need a fast, reliable watermark removal flow.">
+  <meta property="og:image" content="/blog/images/sorawatermarkremover-sora-watermark-remover-og.jpg">
+  <meta property="og:url" content="https://sorawatermarkremover.live/">
+  <meta property="og:site_name" content="SoraWatermarkRemover">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sora Watermark Remover – Clean MP4 in 3s">
+  <meta name="twitter:description"
+    content="Paste your Sora share link and get a clean MP4 in 3 seconds. Built for creators who need a fast, reliable watermark removal flow.">
+  <meta name="twitter:image" content="/blog/images/sorawatermarkremover-sora-watermark-remover-og.jpg">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- JSON-LD: WebApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "SoraWatermarkRemover Sora Watermark Remover",
+    "url": "https://sorawatermarkremover.live",
+    "description": "Free online tool to remove watermarks from Sora AI-generated videos instantly. Paste your share link, click once, download watermark-free HD video.",
+    "applicationCategory": "MultimediaApplication",
+    "operatingSystem": "Web",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "ratingCount": "1250"
+    }
+  }
+  </script>
+
+  <!-- JSON-LD: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type": "Question", "name": "How do I get the Sora share link?", "acceptedAnswer": {"@type": "Answer", "text": "Open your Sora video on sora.chatgpt.com, click the Share button, and copy the public link. Paste that link into SoraWatermarkRemover to retrieve the watermark-free source video."}},
+      {"@type": "Question", "name": "Is this service really free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes! SoraWatermarkRemover is completely free to use — no signup, no credit card, no hidden fees. Simply paste your link and download."}},
+      {"@type": "Question", "name": "Does SoraWatermarkRemover store my videos?", "acceptedAnswer": {"@type": "Answer", "text": "No. We never store your videos. We process the link in real-time and the video is accessed directly from its source."}},
+      {"@type": "Question", "name": "What video quality do I get?", "acceptedAnswer": {"@type": "Answer", "text": "You get the original full HD quality video — no re-encoding, no quality loss. The only difference is the watermark is removed."}},
+      {"@type": "Question", "name": "Can I process multiple videos at once?", "acceptedAnswer": {"@type": "Answer", "text": "Yes! Use Batch Mode to paste multiple links at once. Process them in parallel and download everything as a single ZIP file."}},
+      {"@type": "Question", "name": "Is this affiliated with OpenAI or Sora?", "acceptedAnswer": {"@type": "Answer", "text": "No. SoraWatermarkRemover is an independent tool developed by a third party with no affiliation to OpenAI or Sora."}}
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: HowTo -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "How to Remove Sora Watermark Using SoraWatermarkRemover",
+    "description": "Remove Sora AI video watermarks in 3 simple steps using SoraWatermarkRemover — a free online tool.",
+    "totalTime": "PT10S",
+    "step": [
+      {"@type": "HowToStep", "position": 1, "name": "Paste Your Share Link", "text": "Copy the public Sora share link from sora.chatgpt.com and paste it into the input box."},
+      {"@type": "HowToStep", "position": 2, "name": "Click Remove Watermark", "text": "Click the Remove Watermark Now button. The tool processes the video in the background — no upload needed."},
+      {"@type": "HowToStep", "position": 3, "name": "Download Instantly", "text": "Preview your clean video and download it immediately in full HD quality."}
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">
+        <img src="logo.svg" alt="SoraWatermarkRemover" width="32" height="32">
+        <span>Sora<span class="accent-text">WM</span></span>
+      </a>
+      <div class="nav-links" id="nav-links">
+        <a href="/#how-it-works" data-i18n="nav.howItWorks">How It Works</a>
+        <a href="/#features" data-i18n="nav.features">Features</a>
+        <a href="/#hero" id="nav-batch-link" data-i18n="nav.batchMode">Batch Mode</a>
+        <a href="/blog.html" data-i18n="nav.blog">Blog</a>
+        <a href="/#faq" data-i18n="nav.faq">FAQ</a>
+        <a href="/contact.html" data-i18n="nav.contact">Contact</a>
+      </div>
+      <div class="nav-controls">
+        <!-- Language Selector -->
+        <div class="lang-selector" id="lang-selector">
+          <button class="lang-btn" id="lang-btn" aria-label="Language">
+            <span class="lang-flag" id="lang-flag">🌐</span>
+            <span class="lang-code" id="lang-code">EN</span>
+          </button>
+          <div class="lang-dropdown" id="lang-dropdown">
+            <button data-lang="en" class="lang-opt active">🇺🇸 English</button>
+            <button data-lang="ar" class="lang-opt">🇸🇦 العربية</button>
+            <button data-lang="fr" class="lang-opt">🇫🇷 Français</button>
+            <button data-lang="de" class="lang-opt">🇩🇪 Deutsch</button>
+            <button data-lang="ru" class="lang-opt">🇷🇺 Русский</button>
+          </div>
+        </div>
+        <!-- Theme Toggle -->
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+          <svg class="theme-icon-dark" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2">
+            <circle cx="12" cy="12" r="5" />
+            <line x1="12" y1="1" x2="12" y2="3" />
+            <line x1="12" y1="21" x2="12" y2="23" />
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+            <line x1="1" y1="12" x2="3" y2="12" />
+            <line x1="21" y1="12" x2="23" y2="12" />
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+          </svg>
+          <svg class="theme-icon-light" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+          </svg>
+        </button>
+      </div>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="6" x2="21" y2="6" />
+          <line x1="3" y1="12" x2="21" y2="12" />
+          <line x1="3" y1="18" x2="21" y2="18" />
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Background ambient glows -->
+  <div class="bg-glow"></div>
+  <div class="bg-glow bg-glow-2"></div>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="hero">
+    <!-- Hero Background Layer -->
+    <div class="hero-bg">
+      <!-- SVG Grid Lines (perspective effect) -->
+      <svg class="hero-grid" viewBox="0 0 1200 600" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="grid-fade" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="rgba(16,185,129,0.08)" />
+            <stop offset="60%" stop-color="rgba(16,185,129,0.03)" />
+            <stop offset="100%" stop-color="transparent" />
+          </linearGradient>
+          <linearGradient id="grid-fade-h" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stop-color="transparent" />
+            <stop offset="30%" stop-color="rgba(16,185,129,0.04)" />
+            <stop offset="50%" stop-color="rgba(16,185,129,0.06)" />
+            <stop offset="70%" stop-color="rgba(16,185,129,0.04)" />
+            <stop offset="100%" stop-color="transparent" />
+          </linearGradient>
+        </defs>
+        <!-- Vertical lines -->
+        <line x1="200" y1="0" x2="200" y2="600" stroke="url(#grid-fade)" stroke-width="0.5" />
+        <line x1="400" y1="0" x2="400" y2="600" stroke="url(#grid-fade)" stroke-width="0.5" />
+        <line x1="600" y1="0" x2="600" y2="600" stroke="url(#grid-fade)" stroke-width="0.8" />
+        <line x1="800" y1="0" x2="800" y2="600" stroke="url(#grid-fade)" stroke-width="0.5" />
+        <line x1="1000" y1="0" x2="1000" y2="600" stroke="url(#grid-fade)" stroke-width="0.5" />
+        <!-- Horizontal lines -->
+        <line x1="0" y1="150" x2="1200" y2="150" stroke="url(#grid-fade-h)" stroke-width="0.4" />
+        <line x1="0" y1="300" x2="1200" y2="300" stroke="url(#grid-fade-h)" stroke-width="0.5" />
+        <line x1="0" y1="450" x2="1200" y2="450" stroke="url(#grid-fade-h)" stroke-width="0.4" />
+        <!-- Accent cross at center -->
+        <circle cx="600" cy="300" r="80" stroke="rgba(16,185,129,0.06)" stroke-width="0.5" fill="none" />
+        <circle cx="600" cy="300" r="160" stroke="rgba(16,185,129,0.03)" stroke-width="0.5" fill="none"
+          stroke-dasharray="4 6" />
+      </svg>
+
+      <!-- Floating Particles -->
+      <div class="hero-particles">
+        <span class="particle p1"></span>
+        <span class="particle p2"></span>
+        <span class="particle p3"></span>
+        <span class="particle p4"></span>
+        <span class="particle p5"></span>
+        <span class="particle p6"></span>
+        <span class="particle p7"></span>
+        <span class="particle p8"></span>
+        <span class="particle p9"></span>
+        <span class="particle p10"></span>
+        <span class="particle p11"></span>
+        <span class="particle p12"></span>
+      </div>
+
+      <!-- Gradient Mesh -->
+      <div class="hero-mesh"></div>
+
+      <!-- Decorative rings -->
+      <svg class="hero-ring ring-1" width="300" height="300" viewBox="0 0 300 300" fill="none">
+        <circle cx="150" cy="150" r="140" stroke="rgba(16,185,129,0.05)" stroke-width="1" />
+        <circle cx="150" cy="150" r="100" stroke="rgba(16,185,129,0.03)" stroke-width="0.5" stroke-dasharray="6 8" />
+        <circle cx="150" cy="150" r="60" stroke="rgba(16,185,129,0.04)" stroke-width="0.5" />
+      </svg>
+      <svg class="hero-ring ring-2" width="200" height="200" viewBox="0 0 200 200" fill="none">
+        <circle cx="100" cy="100" r="90" stroke="rgba(16,185,129,0.04)" stroke-width="0.5" stroke-dasharray="3 5" />
+        <circle cx="100" cy="100" r="50" stroke="rgba(16,185,129,0.03)" stroke-width="0.5" />
+      </svg>
+
+      <!-- Diagonal scan line -->
+      <div class="hero-scanline"></div>
+    </div>
+
+    <div class="container">
+      <div class="hero-badge" data-i18n="hero.badge">⚡ Free • Fast • No Signup</div>
+      <h1 class="hero-title"><span data-i18n="hero.title">Remove Sora Watermark</span><br><span class="accent-text"
+          data-i18n="hero.titleAccent">In 2 Seconds</span></h1>
+      <p class="hero-subtitle" data-i18n="hero.subtitle">Paste any Sora share link — get a watermark-free HD video
+        instantly. No upload needed, no account required.</p>
+
+      <!-- Mode Tabs -->
+      <div class="mode-tabs">
+        <button class="mode-tab active" data-mode="single" data-i18n="hero.singleVideo">Single Video</button>
+        <button class="mode-tab" data-mode="batch" data-i18n="hero.batchMode">Batch Mode</button>
+      </div>
+
+      <!-- Single Mode Tool Card -->
+      <div class="tool-card" id="tool-card-single">
+        <div class="input-wrapper">
+          <svg class="input-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2">
+            <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+            <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+          </svg>
+          <input type="text" id="single-url" data-i18n-placeholder="hero.inputPlaceholder"
+            placeholder="Paste Sora video share link here…" autocomplete="off">
+          <button class="btn-paste" id="btn-paste" title="Paste from clipboard">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="9" y="9" width="13" height="13" rx="2" />
+              <path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1" />
+            </svg>
+            <span data-i18n="hero.paste">Paste</span>
+          </button>
+        </div>
+        <button class="btn-primary btn-full" id="btn-process">
+          <span class="btn-text" data-i18n="hero.removeBtn">Remove Watermark Now</span>
+          <div class="btn-spinner" style="display:none"></div>
+        </button>
+        <p class="tool-legal">By using this tool you agree to our <a href="/terms.html">Terms</a> and <a
+            href="/disclaimer.html">Disclaimer</a>.</p>
+      </div>
+
+      <!-- Batch Mode Tool Card -->
+      <div class="tool-card" id="tool-card-batch" style="display:none">
+        <textarea id="batch-urls"
+          placeholder="Paste multiple Sora video links — one per line&#10;&#10;https://sora.chatgpt.com/p/example1&#10;https://sora.chatgpt.com/p/example2&#10;https://sora.chatgpt.com/p/example3"
+          rows="7"></textarea>
+        <div class="batch-actions">
+          <div class="batch-left">
+            <span class="link-count" id="link-count">0 links</span>
+            <button class="btn-paste" id="btn-paste-batch" title="Paste from clipboard">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="9" y="9" width="13" height="13" rx="2" />
+                <path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1" />
+              </svg>
+              Paste
+            </button>
+          </div>
+          <button class="btn-primary" id="btn-batch">
+            <span class="btn-text">Remove All Watermarks</span>
+            <div class="btn-spinner" style="display:none"></div>
+          </button>
+        </div>
+        <p class="tool-legal">By using this tool you agree to our <a href="/terms.html">Terms</a> and <a
+            href="/disclaimer.html">Disclaimer</a>.</p>
+      </div>
+
+      <!-- Progress -->
+      <div class="progress-container" id="progress-container" style="display:none">
+        <div class="progress-bar">
+          <div class="progress-fill" id="progress-fill"></div>
+        </div>
+        <span class="progress-text" id="progress-text">0 / 0</span>
+      </div>
+
+      <!-- Download All -->
+      <div class="download-all-container" id="download-all-container">
+        <button class="btn-download-all" id="btn-download-all">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="20" height="20">
+            <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
+            <polyline points="7 10 12 15 17 10" />
+            <line x1="12" y1="15" x2="12" y2="3" />
+          </svg>
+          Download All as ZIP
+          <div class="btn-spinner" style="display:none"></div>
+        </button>
+      </div>
+
+      <!-- Results -->
+      <div class="results" id="results"></div>
+    </div>
+  </section>
+
+  <!-- ============ BEFORE / AFTER ============ -->
+  <section class="section compare-section" id="compare">
+    <div class="container">
+      <h2 class="section-title">See the <span class="accent-text">Difference</span></h2>
+      <p class="section-subtitle">Same video, watermark gone. Zero quality loss.</p>
+
+      <div class="compare-grid">
+        <!-- BEFORE -->
+        <div class="compare-card compare-before">
+          <div class="compare-badge badge-before">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <line x1="18" y1="6" x2="6" y2="18" />
+              <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
+            BEFORE
+          </div>
+          <div class="compare-video-wrap">
+            <video autoplay loop muted playsinline>
+              <source src="/videos/with-watermark.mp4" type="video/mp4">
+            </video>
+            <div class="compare-watermark-overlay">
+              <span>Watermark Visible</span>
+            </div>
+          </div>
+          <div class="compare-info">
+            <h3>With Watermark</h3>
+            <p>Original Sora video with the default AI watermark overlay.</p>
+          </div>
+        </div>
+
+        <!-- Arrow / Connector -->
+        <div class="compare-arrow">
+          <div class="compare-arrow-line"></div>
+          <div class="compare-arrow-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round">
+              <line x1="5" y1="12" x2="19" y2="12" />
+              <polyline points="12 5 19 12 12 19" />
+            </svg>
+          </div>
+          <div class="compare-arrow-label">SoraWM</div>
+        </div>
+
+        <!-- AFTER -->
+        <div class="compare-card compare-after">
+          <div class="compare-badge badge-after">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <polyline points="20 6 9 17 4 12" />
+            </svg>
+            AFTER
+          </div>
+          <div class="compare-video-wrap">
+            <video autoplay loop muted playsinline>
+              <source src="/videos/no-watermark.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="compare-info">
+            <h3>Watermark Removed</h3>
+            <p>Clean HD video — no watermark, no quality loss, instant download.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW IT WORKS ============ -->
+  <section class="section" id="how-it-works">
+    <div class="container">
+      <h2 class="section-title">Remove the Watermark in <span class="accent-text">3 Steps</span></h2>
+      <p class="section-subtitle">It takes less than 10 seconds, start to finish.</p>
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-number">1</div>
+          <div class="step-icon">🔗</div>
+          <h3>Paste Your Share Link</h3>
+          <p>Copy the public Sora share link and paste it into the input box above.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-number">2</div>
+          <div class="step-icon">⚡</div>
+          <h3>Click "Remove Watermark"</h3>
+          <p>Our tool calls the watermark removal API in the background — no upload, no wait.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-number">3</div>
+          <div class="step-icon">⬇️</div>
+          <h3>Download Instantly</h3>
+          <p>Preview your clean video without the watermark and download it immediately.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STATS COUNTER ============ -->
+  <section class="section stats-section" id="stats">
+    <!-- SVG Background Illustrations -->
+    <div class="stats-bg-illustrations">
+      <!-- Floating geometric shapes -->
+      <svg class="stats-illust illust-1" width="120" height="120" viewBox="0 0 120 120" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <circle cx="60" cy="60" r="58" stroke="rgba(16,185,129,0.15)" stroke-width="2" stroke-dasharray="8 6" />
+        <circle cx="60" cy="60" r="40" stroke="rgba(16,185,129,0.08)" stroke-width="1.5" />
+        <circle cx="60" cy="60" r="8" fill="rgba(16,185,129,0.12)" />
+      </svg>
+      <svg class="stats-illust illust-2" width="80" height="80" viewBox="0 0 80 80" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <rect x="10" y="10" width="60" height="60" rx="12" stroke="rgba(16,185,129,0.1)" stroke-width="1.5"
+          transform="rotate(15 40 40)" />
+        <rect x="20" y="20" width="40" height="40" rx="8" stroke="rgba(16,185,129,0.06)" stroke-width="1"
+          transform="rotate(15 40 40)" />
+      </svg>
+      <svg class="stats-illust illust-3" width="100" height="100" viewBox="0 0 100 100" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <polygon points="50,5 95,30 95,70 50,95 5,70 5,30" stroke="rgba(16,185,129,0.12)" stroke-width="1.5"
+          fill="none" />
+        <polygon points="50,20 80,35 80,65 50,80 20,65 20,35" stroke="rgba(16,185,129,0.06)" stroke-width="1"
+          fill="none" />
+      </svg>
+      <svg class="stats-illust illust-4" width="60" height="60" viewBox="0 0 60 60" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path d="M30 5 L55 30 L30 55 L5 30 Z" stroke="rgba(16,185,129,0.1)" stroke-width="1.5" />
+      </svg>
+      <svg class="stats-illust illust-5" width="140" height="140" viewBox="0 0 140 140" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <circle cx="70" cy="70" r="68" stroke="rgba(16,185,129,0.06)" stroke-width="1" stroke-dasharray="4 8" />
+        <path d="M70 10 L70 130 M10 70 L130 70" stroke="rgba(16,185,129,0.04)" stroke-width="0.5" />
+      </svg>
+      <!-- Glowing orbs -->
+      <div class="stats-orb orb-1"></div>
+      <div class="stats-orb orb-2"></div>
+      <div class="stats-orb orb-3"></div>
+    </div>
+
+    <div class="container">
+      <h2 class="section-title">Trusted by <span class="accent-text">Creators</span> Worldwide</h2>
+      <p class="section-subtitle">Real-time stats from our watermark removal engine.</p>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="23 7 16 12 23 17 23 7" />
+              <rect x="1" y="5" width="15" height="14" rx="2" />
+            </svg>
+          </div>
+          <div class="stat-number" data-target="147832" data-suffix="+">0</div>
+          <div class="stat-label">Videos Processed</div>
+          <div class="stat-sublabel">and counting...</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10" />
+              <polyline points="12 6 12 12 16 14" />
+            </svg>
+          </div>
+          <div class="stat-number" data-target="2.4" data-suffix="s" data-decimal="true">0</div>
+          <div class="stat-label">Avg Processing Time</div>
+          <div class="stat-sublabel">lightning fast</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+              <polyline points="22 4 12 14.01 9 11.01" />
+            </svg>
+          </div>
+          <div class="stat-number" data-target="99.7" data-suffix="%" data-decimal="true">0</div>
+          <div class="stat-label">Success Rate</div>
+          <div class="stat-sublabel">near-perfect accuracy</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+              <circle cx="9" cy="7" r="4" />
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+              <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+            </svg>
+          </div>
+          <div class="stat-number" data-target="23491" data-suffix="+">0</div>
+          <div class="stat-label">Happy Users</div>
+          <div class="stat-sublabel">across 120+ countries</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURES ============ -->
+  <section class="section section-alt" id="features">
+    <div class="container">
+      <h2 class="section-title">Built for <span class="accent-text">Instant</span> Watermark Removal</h2>
+      <p class="section-subtitle">Everything you need, nothing you don't.</p>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h3>Instant Processing</h3>
+          <p>Most clips finish in 2–10 seconds so you can download the clean video right away.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔗</div>
+          <h3>No Upload Needed</h3>
+          <p>Simply paste the share link. We fetch the video directly — zero bandwidth costs for you.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">⬇️</div>
+          <h3>Immediate Download</h3>
+          <p>As soon as processing completes, preview and download your video without the watermark.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📦</div>
+          <h3>Batch Mode</h3>
+          <p>Process multiple videos at once and download them all in a single ZIP file.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔒</div>
+          <h3>Privacy Protected</h3>
+          <p>We never store your videos. Only essential processing logs are kept to prevent abuse.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">✨</div>
+          <h3>Simple & Easy</h3>
+          <p>Designed for speed — paste the link, click once, and enjoy watermark-free videos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="section" id="faq">
+    <div class="container">
+      <h2 class="section-title">Frequently Asked <span class="accent-text">Questions</span></h2>
+      <p class="section-subtitle">Everything you need to know about removing Sora watermarks.</p>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>How do I get the Sora share link?</summary>
+          <div class="faq-answer">Open your Sora video on sora.chatgpt.com, click the "Share" button, and copy the
+            public link. Paste that link into our tool so we can retrieve the watermark-free source video directly.
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary>Is this service really free?</summary>
+          <div class="faq-answer">Yes! SoraWatermarkRemover is completely free to use — no signup, no credit card, no
+            hidden fees.
+            Simply paste your link and download.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Does SoraWatermarkRemover store my videos?</summary>
+          <div class="faq-answer">No. We never store your videos. We process the link in real-time and the video is
+            accessed directly from its source. We only keep minimal processing logs for abuse prevention.</div>
+        </details>
+        <details class="faq-item">
+          <summary>What video quality do I get?</summary>
+          <div class="faq-answer">You get the original full HD quality video as uploaded to Sora — no re-encoding, no
+            quality loss. The only difference is the watermark is removed.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Can I process multiple videos at once?</summary>
+          <div class="faq-answer">Absolutely. Use our <a href="/batch.html">Batch Mode</a> to paste multiple links at
+            once. You can process them all in parallel and download everything as a single ZIP file.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Is this affiliated with OpenAI or Sora?</summary>
+          <div class="faq-answer">No. SoraWatermarkRemover is an independent tool developed by a third party. We have no
+            affiliation with OpenAI, Sora, or any video generation provider. Please see our <a
+              href="/disclaimer.html">Disclaimer</a> for details.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="logo.svg" alt="SoraWatermarkRemover" width="28" height="28">
+            <span>Sora<span class="accent-text">WM</span></span>
+          </div>
+          <p>Free Sora watermark removal for AI-generated videos. Fast, secure, and high-quality results.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Product</h4>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/batch.html">Batch Mode</a></li>
+            <li><a href="/#faq">FAQ</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/#how-it-works">How It Works</a></li>
+            <li><a href="/#features">Features</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="/privacy.html">Privacy Policy</a></li>
+            <li><a href="/terms.html">Terms of Service</a></li>
+            <li><a href="/cookie.html">Cookie Policy</a></li>
+            <li><a href="/disclaimer.html">Disclaimer</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 SoraWatermarkRemover. All rights reserved. Not affiliated with OpenAI.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast -->
+  <div class="toast" id="toast"></div>
+
+  <script src="i18n-theme.js"></script>
+  <script src="app.js"></script>
+  <script src="batch.js"></script>
+
+  <!-- Stats Counter Animation -->
+  <script>
+    (function () {
+      function easeOutQuart(t) { return 1 - Math.pow(1 - t, 4); }
+      function formatNum(n) { return n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ','); }
+
+      function animateCounter(el) {
+        const target = parseFloat(el.dataset.target);
+        const suffix = el.dataset.suffix || '';
+        const isDecimal = el.dataset.decimal === 'true';
+        const duration = 2000;
+        const start = performance.now();
+
+        function tick(now) {
+          const elapsed = now - start;
+          const progress = Math.min(elapsed / duration, 1);
+          const eased = easeOutQuart(progress);
+          const current = eased * target;
+
+          if (isDecimal) {
+            el.textContent = current.toFixed(1) + suffix;
+          } else {
+            el.textContent = formatNum(Math.floor(current)) + suffix;
+          }
+
+          if (progress < 1) requestAnimationFrame(tick);
+        }
+        requestAnimationFrame(tick);
+      }
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.querySelectorAll('.stat-number').forEach(animateCounter);
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.3 });
+
+      const statsSection = document.getElementById('stats');
+      if (statsSection) observer.observe(statsSection);
+    })();
+  </script>
+</body>
+
+</html>
