@@ -405,7 +405,7 @@ function generateArticleHTML(article, index) {
   <meta name="robots" content="index, follow">
   <meta name="author" content="SoraWatermarkRemover Team">
   <link rel="canonical" href="https://sorawatermarkremover.live/blog/posts/${article.slug}.html">
-  <link rel="icon" href="/logo.png" type="image/png">
+  <link rel="icon" href="/logo.svg" type="image/svg+xml">
 
   <meta property="og:type" content="article">
   <meta property="og:title" content="${article.title}">
@@ -430,7 +430,7 @@ function generateArticleHTML(article, index) {
     "description": "Learn about ${article.kw} with tips, guides, and expert insights.",
     "image": "https://sorawatermarkremover.live${IMAGES_DIR}/${images[0].file}",
     "author": { "@type": "Organization", "name": "SoraWatermarkRemover" },
-    "publisher": { "@type": "Organization", "name": "SoraWatermarkRemover", "logo": { "@type": "ImageObject", "url": "https://sorawatermarkremover.live/logo.png" } },
+    "publisher": { "@type": "Organization", "name": "SoraWatermarkRemover", "logo": { "@type": "ImageObject", "url": "https://sorawatermarkremover.live/logo.svg" } },
     "datePublished": "${dateStr}",
     "dateModified": "${dateStr}",
     "mainEntityOfPage": { "@type": "WebPage", "@id": "https://sorawatermarkremover.live/blog/posts/${article.slug}.html" }
@@ -442,7 +442,7 @@ function generateArticleHTML(article, index) {
   <nav class="navbar" id="navbar">
     <div class="nav-inner">
       <a href="/" class="nav-logo">
-        <img src="/logo.png" alt="SoraWatermarkRemover Sora watermark remover" width="32" height="32">
+        <img src="/logo.svg" alt="SoraWatermarkRemover Sora watermark remover" width="32" height="32">
         <span>Sora<span class="accent-text">WM</span></span>
       </a>
       <div class="nav-links" id="nav-links">
@@ -554,7 +554,7 @@ function generateArticleHTML(article, index) {
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <div class="footer-logo"><img src="/logo.png" alt="SoraWatermarkRemover" width="28" height="28"><span>Sora<span class="accent-text">WM</span></span></div>
+          <div class="footer-logo"><img src="/logo.svg" alt="SoraWatermarkRemover" width="28" height="28"><span>Sora<span class="accent-text">WM</span></span></div>
           <p>Free Sora watermark removal for AI-generated videos.</p>
         </div>
         <div class="footer-col"><h4>Product</h4><ul><li><a href="/">Home</a></li><li><a href="/blog.html">Blog</a></li><li><a href="/#faq">FAQ</a></li><li><a href="/contact.html">Contact</a></li></ul></div>
