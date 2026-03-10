@@ -1786,20 +1786,81 @@ textarea:focus {
     top: 100%;
     left: 0;
     right: 0;
-    background: rgba(10, 10, 10, 0.95);
-    backdrop-filter: blur(20px);
+    background: rgba(10, 10, 10, 0.97);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
     flex-direction: column;
-    padding: 16px 24px;
-    gap: 16px;
+    padding: 12px 24px 20px;
+    gap: 4px;
     border-bottom: 1px solid var(--border);
+    animation: slideDown 0.25s ease-out;
+  }
+
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-8px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  [data-theme="light"] .nav-links {
+    background: rgba(255, 255, 255, 0.97);
   }
 
   .nav-links.open {
     display: flex;
   }
 
+  /* Larger touch targets for mobile nav links */
+  .nav-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 16px;
+    font-size: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    transition: background 0.2s;
+    min-height: 44px;
+    line-height: 1;
+  }
+
+  .nav-links a:hover,
+  .nav-links a:active {
+    background: var(--surface);
+  }
+
   .nav-toggle {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 44px;
+    min-height: 44px;
+    border-radius: 8px;
+  }
+
+  .nav-toggle:active {
+    background: var(--surface);
+  }
+
+  /* Compact header controls on mobile */
+  .nav-controls {
+    gap: 8px;
+    margin-left: 8px;
+    padding-left: 8px;
+  }
+
+  .lang-code {
+    display: none;
+  }
+
+  .lang-btn svg {
+    display: none;
   }
 
   .hero-title {
@@ -1808,6 +1869,11 @@ textarea:focus {
 
   .hero {
     padding: 80px 0 40px;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+    padding: 0 8px;
   }
 
   .steps-grid {
@@ -1825,6 +1891,14 @@ textarea:focus {
     gap: 30px;
   }
 
+  /* Larger footer links for touch */
+  .footer-col ul li a {
+    display: block;
+    padding: 8px 0;
+    min-height: 40px;
+    line-height: 24px;
+  }
+
   .result-info {
     flex-direction: column;
     align-items: flex-start;
@@ -1837,10 +1911,13 @@ textarea:focus {
   .btn-download {
     flex: 1;
     justify-content: center;
+    min-height: 48px;
   }
 
   .btn-primary {
     width: 100%;
+    min-height: 48px;
+    font-size: 1rem;
   }
 
   .btn-full {
@@ -1856,8 +1933,71 @@ textarea:focus {
     justify-content: space-between;
   }
 
+  .btn-paste {
+    min-height: 44px;
+    padding: 0 16px;
+  }
+
   .legal-page h1 {
     font-size: 1.8rem;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  /* FAQ touch improvements */
+  .faq-item summary {
+    min-height: 48px;
+    padding: 16px;
+  }
+
+  /* Blog category buttons - bigger on mobile */
+  .blog-cat-btn {
+    padding: 10px 18px;
+    font-size: 0.9rem;
+    min-height: 44px;
+  }
+
+  /* Footer social icons spacing */
+  .footer-social {
+    gap: 16px !important;
+  }
+
+  .footer-social a {
+    min-width: 44px;
+    min-height: 44px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Tool card */
+  .tool-card {
+    padding: 20px;
+    border-radius: 16px;
+  }
+
+  /* Prevent iOS zoom on input focus */
+  .input-wrapper input,
+  textarea {
+    font-size: 16px;
+  }
+
+  /* Stats section */
+  .stats-section {
+    padding: 60px 0;
+  }
+
+  /* Mode tabs */
+  .mode-tabs {
+    max-width: 100%;
+  }
+
+  .mode-tab {
+    padding: 10px 16px;
+    font-size: 0.85rem;
+    min-height: 44px;
   }
 }
 
@@ -1867,11 +2007,11 @@ textarea:focus {
   }
 
   .hero-title {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
   }
 
   .section-title {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
 
   .footer-grid {
@@ -1880,7 +2020,51 @@ textarea:focus {
   }
 
   .tool-card {
-    padding: 20px;
+    padding: 16px;
+    border-radius: 14px;
+  }
+
+  /* Safe area for notched phones (iPhone X+) */
+  .navbar {
+    padding-top: env(safe-area-inset-top, 0);
+  }
+
+  .site-footer {
+    padding-bottom: env(safe-area-inset-bottom, 0);
+  }
+
+  .hero-badge {
+    font-size: 0.75rem;
+    padding: 5px 12px;
+  }
+
+  .hero-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .nav-inner {
+    padding: 10px 16px;
+  }
+}
+
+/* ============ TOUCH FEEDBACK ============ */
+@media (hover: none) and (pointer: coarse) {
+
+  .btn-primary:active,
+  .btn-paste:active,
+  .btn-download:active,
+  .btn-download-all:active,
+  .blog-cat-btn:active,
+  .mode-tab:active {
+    transform: scale(0.97);
+    opacity: 0.9;
+  }
+
+  .compare-card:hover,
+  .stat-card:hover,
+  .feature-card:hover,
+  .step-card:hover {
+    transform: none;
   }
 }
 

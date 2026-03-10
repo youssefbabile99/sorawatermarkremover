@@ -37,6 +37,38 @@ const apiLimiter = rateLimit({
 });
 
 app.use(express.json());
+
+// SEO: Smart caching headers for static assets and HTML
+app.use((req, res, next) => {
+    const url = req.url.toLowerCase();
+
+    // Long cache for static assets (CSS, JS, images, fonts, videos)
+    if (/\.(css|js|png|jpg|jpeg|gif|svg|webp|ico|woff|woff2|ttf|eot|mp4|webm)$/i.test(url)) {
+        res.setHeader('Cache-Control', 'public, max-age=31536000, immutable');
+        res.setHeader('X-Content-Type-Options', 'nosniff');
+    }
+    // Short cache for HTML pages (1 hour) — allows fresh content while still caching
+    else if (/\.(html?)$/i.test(url) || url === '/' || url === '') {
+        res.setHeader('Cache-Control', 'public, max-age=3600, must-revalidate');
+        res.setHeader('X-Content-Type-Options', 'nosniff');
+    }
+    // Cache for XML/TXT (sitemap, robots) — 6 hours
+    else if (/\.(xml|txt)$/i.test(url)) {
+        res.setHeader('Cache-Control', 'public, max-age=21600');
+    }
+
+    next();
+});
+
+// SEO: Trailing slash redirect to prevent duplicate content
+app.use((req, res, next) => {
+    if (req.path !== '/' && req.path.endsWith('/') && !req.path.startsWith('/api')) {
+        const newPath = req.path.slice(0, -1) + (req.url.includes('?') ? '?' + req.url.split('?')[1] : '');
+        return res.redirect(301, newPath);
+    }
+    next();
+});
+
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Apply the rate limiter strictly to API routes

@@ -1,5 +1,23 @@
+# SoraWatermarkRemover — robots.txt
+# https://sorawatermarkremover.live
+
 User-agent: *
 Allow: /
 Disallow: /api/
+Disallow: /videos/
 
+# Sitemap
 Sitemap: https://sorawatermarkremover.live/sitemap.xml
+
+# Googlebot-specific
+User-agent: Googlebot
+Allow: /
+Disallow: /api/
+Disallow: /videos/
+
+# Bingbot-specific
+User-agent: Bingbot
+Allow: /
+Disallow: /api/
+Disallow: /videos/
+Crawl-delay: 1
