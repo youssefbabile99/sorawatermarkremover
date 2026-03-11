@@ -21,3 +21,42 @@ Allow: /
 Disallow: /api/
 Disallow: /videos/
 Crawl-delay: 1
+
+# AI Search Crawlers — allow for AI search visibility (GEO)
+User-agent: GPTBot
+Allow: /
+Disallow: /api/
+Disallow: /videos/
+
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /api/
+Disallow: /videos/
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /api/
+Disallow: /videos/
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /api/
+Disallow: /videos/
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /api/
+Disallow: /videos/
+
+# Block AI training crawlers (not search-related)
+User-agent: CCBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
